@@ -1,0 +1,77 @@
+/* Start Main Rules */
+
+.container {
+    width: 1050px;
+    margin: 0 auto;
+    height: 4000px
+}
+.clear-float {  clear: both;    }
+
+
+/* End Main Rules */
+
+/* Start Slider-navbar */
+
+.slider-navbar {
+
+    background: rgba(75, 75, 93, 0.85) url('../images/young_backpac.jpg') scroll;
+    background-size: cover;
+    height: 1100px;
+}
+
+.slider-navbar .navbar h3 {
+    float: left;
+    font-size: 38px;
+    color: #666;
+    margin-top: 60px;
+}
+.slider-navbar .navbar h3 span {
+    color: rgba(1, 217, 62, 0.95);
+}
+
+.slider-navbar .navbar ul {     list-style-type: none; float: right;   }
+
+.slider-navbar .navbar ul li {
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 22px;
+    margin-top: 60px;
+}
+.slider-navbar .navbar ul li a {
+    text-decoration: none;
+    color: #666;
+}
+.slider-navbar .navbar ul li.active a,
+.slider-navbar .navbar ul li a:hover{   color: rgba(1, 217, 62, 0.95);  }
+
+.slider-navbar .slider {
+    text-align: center;
+}
+.slider-navbar .slider h1 {
+    font: 50px  Tahoma;
+    color: #444;
+    margin-top: 120px;
+}
+.slider-navbar .slider .feat {
+    width:33% ;
+    float: left;
+    margin: 60px 0;
+    border-right: 3px solid #ccc;
+}
+.slider-navbar .slider .no-border {  border: 0;    }
+
+.slider-navbar .slider .feat .text h3 { color: #555;    font-size: 22px;    }
+
+.slider-navbar .slider .feat .text p {  color: #777; line-height: 1.6;  }
+
+.slider-navbar .slider button {
+    background: none;
+    color: rgba(151, 78, 23, 0.81);
+    font-size: 23px;
+    font-weight: bold;
+    border: 2px solid #6cacc0;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+.slider-navbar .slider button:hover{    background-color: #6cc091; }
+/* End Slider-navbar */
