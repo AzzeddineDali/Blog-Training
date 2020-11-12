@@ -1,0 +1,149 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Word</title>
+    <link rel="stylesheet" href="{% static '/CSS/main.css' %} ">
+</head>
+<body>
+    <!-- Start Slider-navbar -->
+    <div class="slider-navbar">
+        <div class="container">
+            <!-- Start NavBar -->
+            <div class="navbar">
+                <h3><span>Travel</span> Blog</h3>
+                <ul>
+                    <li class="active"><a href="{% url 'home-page' %}">Home</a></li>
+                    <li><a href="#">Sea History</a></li>
+                    <li><a href="#">Mountain History</a></li>
+                    <li><a href="#">Forest History</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+
+            <!-- End NavBar -->
+            <div class="clear-float"></div>
+            <hr>
+            <!-- Start Slider -->
+            <div class="slider">
+                <h1>Welcome To Travel Blog</h1>
+
+                <!-- Start Feat -->
+
+                <div class="feat">
+
+                    <div class="icon">
+                        <img src="{%  static '/images/sea.png' %}" alt="">
+                    </div>
+
+                    <div class="text">
+                        <h3>Sea Vlog</h3>
+                        <p>Paragraph for Description section Paragraph for Description section</p>
+                     </div>
+
+                </div>
+
+                <!-- End Feat -->
+                <!-- Start Feat -->
+
+                <div class="feat">
+
+                    <div class="icon">
+                        <img src="{%  static '/images/mountain.png' %}" alt="">
+                    </div>
+
+                    <div class="text">
+                        <h3>Moutain Vlog</h3>
+                        <p>Paragraph for Description section Paragraph for Description section</p>
+                     </div>
+
+                </div>
+
+                <!-- End Feat -->
+
+                <!-- Start Feat -->
+
+                <div class="feat no-border">
+
+                    <div class="icon">
+                        <img src="{%  static '/images/forest.png' %}" alt="">
+                    </div>
+
+                    <div class="text">
+                        <h3>Forest Vlog</h3>
+                        <p>Paragraph for Description section Paragraph for Description section</p>
+                     </div>
+
+                </div>
+
+                <!-- End Feat -->
+                <button>Get Started</button>
+            </div>
+            <!-- End Slider -->
+
+        </div>
+    </div>
+    <!-- End Slider-navbar -->
+    <!-- start content -->
+
+      <div class="content">
+        <div class="container">
+           <!-- Start show title best 5 blog -->
+
+            <div class="best-blog">
+                <h2>Best Blog Watched !</h2>
+                <a href="#">Blog Article 1</a>
+                <a href="#">Blog Article 2</a>
+                <a href="#">Blog Article 3</a>
+            </div>
+
+            <!-- end show title best 5 blog -->
+
+    {% block content %}
+
+        <!-- Place of our content block -->
+
+    {% endblock content %}
+
+         </div>
+    </div>
+    <!-- end content -->
+    <!-- Start contact Me -->
+
+    <form class="contact-me">
+        <div class="container">
+            <h2>Get in touch</h2>
+            <div class="label-input">
+                 <label>Name</label>
+                <input type="text">
+            </div>
+
+            <div class="label-input">
+                <label>Email</label>
+                <input type="text">
+            </div>
+
+            <div class="label-input">
+                <label>Message</label>
+                <textarea></textarea>
+
+                <input type="submit" value="Send Message">
+            </div>
+        </div>
+    </form>
+    <!-- end contact Me -->
+    <!-- start footer -->
+
+    <div class="footer">
+        <div class="container">
+            <span>Copyright &copy; Made with &hearts;</span>
+        </div>
+    </div>
+
+    <!-- end footer -->
+
+
+
+</body>
+</html>

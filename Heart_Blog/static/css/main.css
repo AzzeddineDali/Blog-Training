@@ -1,9 +1,12 @@
 /* Start Main Rules */
+body {
+    margin: 0;
+
+}
 
 .container {
-    width: 1050px;
+    width: 1300px;
     margin: 0 auto;
-    height: 4000px
 }
 .clear-float {  clear: both;    }
 
@@ -14,9 +17,9 @@
 
 .slider-navbar {
 
-    background: rgba(75, 75, 93, 0.85) url('../images/young_backpac.jpg') scroll;
+    background: rgba(75, 75, 93, 0.85) url('../images/slider.jpg') scroll;
     background-size: cover;
-    height: 1100px;
+    height: 1000px;
 }
 
 .slider-navbar .navbar h3 {
@@ -62,7 +65,12 @@
 
 .slider-navbar .slider .feat .text h3 { color: #555;    font-size: 22px;    }
 
-.slider-navbar .slider .feat .text p {  color: #777; line-height: 1.6;  }
+.slider-navbar .slider .feat .text p {
+    color: #fff;
+    font-size: 22px;
+    line-height: 1.6;
+    padding: 0 10px;
+}
 
 .slider-navbar .slider button {
     background: none;
@@ -75,3 +83,149 @@
 }
 .slider-navbar .slider button:hover{    background-color: #6cc091; }
 /* End Slider-navbar */
+
+/* start content */
+.content {
+    margin: 20px auto;
+    overflow: hidden;
+    height: 800px;
+}
+.content .best-blog {
+    width: 20%;
+    float: left;
+    background-color: #3a93b2;
+    margin-right: 3%;
+    height: 500px;
+    padding-left: 3px;
+    padding-top: 40px;
+}
+
+.content .best-blog h2 {
+    color: #FFF;
+    text-transform: uppercase;
+    font: bold 21px Tahoma;
+}
+.content .best-blog a {
+    display: block;
+    padding: 5px 0;
+    color: #c6edf4;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.content .blog-show {
+    width: 76%;
+    float: left;
+    text-align: center;
+    overflow: hidden;
+}
+
+.content .blog-show h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: "Bitstream Vera Sans Mono", Monaco, "Courier New", Courier, monospace
+}
+
+.content .blog-show .blog-image-title {
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+}
+.content .blog-show .blog-image-title a {
+    text-decoration: none;
+    padding: 10px 0;
+    font-size: 23px;
+    color: black;
+    font-family: cursive;
+}
+
+.content .blog-show .blog-image-title a:hover {color: #2da1c4}
+
+.content .blog-show  img {
+    width: 90%;
+    height: 200px;
+    margin-bottom: 30px;
+}
+
+.content .blog-show .blog-detail {
+    text-align: left;
+}
+.content .blog-show .blog-detail h1 {
+    text-transform:capitalize;
+    font-size: 25px;
+    font-family: monospace;
+}
+.content .blog-show .blog-detail .date {
+    font-size: 22px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Calibri;
+}
+
+.content .blog-show .blog-detail p {
+    width: 90%;
+    line-height: 1.6;
+    font-size: 18px;
+    text-align: justify;
+    font-family: Calibri;
+}
+
+.content .blog-show .blog-detail img {
+    width: 500px;
+    height: 400px;
+}
+
+
+/* end content */
+/* start contact me */
+.contact-me {   background-color: #6cc091; }
+
+.contact-me h2  { color: #fff; text-align: center; font-size: 30px; padding: 20px 0; }
+
+.contact-me .label-input {   display: inline-block; margin-right: 10px; }
+.contact-me .label-input label {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 20px;
+}
+
+.contact-me .label-input input[type="text"] {
+    background: none;
+    border: 2px solid #ccc;
+    width: 600px;
+    padding: 12px 0;
+}
+.contact-me textarea {
+    margin-top: 10px;
+    display: block;
+    height: 300px;
+    width: 1300px;
+    background: none;
+    border: 2px solid #ccc;
+}
+
+.contact-me input[type='submit'] {
+    margin-top: 10px;
+    background: none;
+    color: #fff;
+    border: 2px solid #ccc;
+    padding: 5px 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* end contact me */
+/* start footer */
+
+.footer {
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer span {  font-size: 18px;    }
+
+/* end footer */
+
+
