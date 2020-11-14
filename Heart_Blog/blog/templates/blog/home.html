@@ -8,24 +8,20 @@
 
         <div class="blog-show">
             <h1>Latest blog posts </h1>
-           <div class="blog-image-title">
 
-                <img src="{% static '/images/travel.jpg' %}" alt="">
-                <a href>First blog article</a>
+            {% for blog in blogs %}
+               <div class="blog-image-title">
 
-           </div>
-            <div class="blog-image-title">
+                   <a href="{% url 'detail' blog_id=blog.pk %}">
+                       <img src="{{ blog.image.url }}" alt="">
+                   </a>
 
-                <img src="{% static '/images/travel.jpg' %}" alt="">
-                <a href="{% url 'detail' %}">Second blog article</a>
+                   <a href="{% url 'detail' blog_id=blog.pk %}">
+                       {{ blog.title }}
+                   </a>
 
-           </div>
-            <div class="blog-image-title">
-
-                <img src="{% static '/images/travel.jpg' %}" alt="">
-                <a href="#">Third blog article</a>
-
-           </div>
+               </div>
+            {% endfor %}
 
         </div>
     <!-- End Blog show article -->

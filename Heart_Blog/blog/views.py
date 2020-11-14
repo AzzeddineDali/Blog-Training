@@ -8,5 +8,7 @@ def home(request):
     return render(request, 'blog/home.html', {"blogs": articles})
 
 
-def detail(request):
-    return render(request, 'blog/detail.html')
+def detail(request, blog_id):
+
+    blog_target = BlogArticle.objects.get(pk=blog_id)
+    return render(request, 'blog/detail.html', {"blog_target": blog_target})

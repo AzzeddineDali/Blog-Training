@@ -79,6 +79,7 @@ body {
     width: 76%;
     float: left;
     text-align: center;
+    padding-bottom: 60px;
     overflow: hidden;
 }
 
@@ -89,28 +90,33 @@ body {
 }
 
 .content .blog-show .blog-image-title {
-    width: 30%;
-    text-align: center;
+    width: 45%;
+
     display: inline-block;
+
 }
 .content .blog-show .blog-image-title a {
     text-decoration: none;
-    padding: 10px 0;
-    font-size: 23px;
+    font-size: 22px;
     color: black;
     font-family: cursive;
+    padding-bottom: 20px;
+    text-align: center;
+    display: block;
+    text-transform: capitalize;
 }
 
 .content .blog-show .blog-image-title a:hover {color: #2da1c4}
 
 .content .blog-show  img {
-    width: 90%;
-    height: 200px;
-    margin-bottom: 30px;
+    width: 85%;
+    height: 250px;
+    margin: 50px 0 10px 0;
 }
 
 .content .blog-show .blog-detail {
     text-align: left;
+    min-height: 1000px;
 }
 .content .blog-show .blog-detail h1 {
     text-transform:capitalize;
@@ -125,7 +131,7 @@ body {
 }
 
 .content .blog-show .blog-detail p {
-    width: 90%;
+    width: 80%;
     line-height: 1.6;
     font-size: 18px;
     text-align: justify;
