@@ -40,6 +40,8 @@ INSTALLED_APPS = [
 
     # Owen App
     'blog.apps.BlogConfig',
+    'users.apps.UsersConfig',
+    'crispy_forms'
 ]
 
 MIDDLEWARE = [
@@ -128,3 +130,6 @@ STATICFILES_DIRS = [
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+LOGIN_URL = "home"
+LOGIN_REDIRECT_URL = 'home-page'
