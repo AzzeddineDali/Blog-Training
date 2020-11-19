@@ -142,7 +142,48 @@ body {
     width: 500px;
     height: 400px;
 }
+.content .blog-show .login-logout {
+	text-align: center;
+	padding: 10px auto;
+	margin: 20px auto;
+}
+.content .blog-show .login-logout fieldset {
+	border: 1px solid #ccc;
+}
 
+.content .blog-show .login-logout form{
+	text-align: left;
+}
+.content .blog-show .login-logout fieldset legend {
+	font-size: 28px;
+	color: #444;
+	margin-bottom: 40px;
+	font-family: monospace;
+}
+
+.content .blog-show .login-logout label {
+	font-size: 20px;
+	color: #555;
+	text-align: left;
+	
+}
+.content .blog-show .login-logout input {
+        display: block;
+        font-size: 16px;
+	margin: 8px 0;
+	padding: 8px 0;
+	width: 500px;
+	color: #666;
+}
+.content .blog-show .login-logout button {
+	background: none;
+	border: 1px solid green;
+	padding: 5px 10px;
+	margin: 30px 0 15px;
+	font-size: 20px;
+	font-family: monospace;
+	text-align: left;
+}
 
 /* end content */
 /* start contact me */

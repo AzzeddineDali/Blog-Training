@@ -4,21 +4,23 @@
 {% block content %}
 
     <div class="blog-show">
-        
-	  <div class="login-logout">
-	
-	<fieldset>
-		<legend>Sign in </legend>
+
+          <div class="login-logout">
+
+        <fieldset>
+                <legend>Join Us </legend>
             <form action="" method="post">
 
                 {% csrf_token %}
-                {{ form }}
-                <button type="submit">Login</button>
+                {{ register_form|crispy }}
+                <button type="submit">Sign In</button>
 
             </form>
-	</fieldset>
+        </fieldset>
 
         </div>
     </div>
 
 {% endblock content %}
+~
+

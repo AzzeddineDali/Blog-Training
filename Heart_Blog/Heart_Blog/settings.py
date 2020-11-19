@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     # Owen App
     'blog.apps.BlogConfig',
     'users.apps.UsersConfig',
-    'crispy_forms'
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
