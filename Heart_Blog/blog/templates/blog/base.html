@@ -19,14 +19,17 @@
                     <li><a href="#">Mountain</a></li>
                     <li><a href="#">Forest</a></li>
 
-		    {% if user.is_authenticated %}
-		    <li><a href="{% url 'logout' %}">Logout</a></li>
-		    	<li><a href="#">Profile</a></li>
+                    {% if user.is_authenticated %}
 
-		     {% else %}
-			<li><a href="{% url 'login' %}">Login</a></li>
-			<li><a href="{% url 'register' %}">Register</a></li>
-		     {% endif %}
+                        <li><a href="{% url 'logout' %}">Logout</a></li>
+                        <li><a href="{% url 'profile' %}">Profile</a></li>
+
+                     {% else %}
+
+                        <li><a href="{% url 'login' %}">Login</a></li>
+                        <li><a href="{% url 'register' %}">Register</a></li>
+
+                     {% endif %}
 
                     <li><a href="#">About Us</a></li>
                 </ul>

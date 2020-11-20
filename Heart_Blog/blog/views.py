@@ -11,4 +11,4 @@ def home(request):
 def detail(request, blog_id):
 
     blog_target = BlogArticle.objects.get(pk=blog_id)
-    return render(request, 'blog/detail.html', {"blog_target": blog_target})
+    return render(request, 'blog/post.html', {"blog_target": blog_target})
