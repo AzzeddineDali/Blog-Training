@@ -1,14 +1,20 @@
 from django.shortcuts import render
 from .models import BlogArticle
+from django.views.generic import ListView, DetailView, CreateView
+from .models import BlogArticle
 
 
-def home(request):
+class PostListView(ListView):
+    model = BlogArticle
+    template_name = 'blog/home.html'
+    context_object_name = 'blogs'
 
-    articles = BlogArticle.objects.all()
-    return render(request, 'blog/home.html', {"blogs": articles})
+
+class PostDetailView(DetailView):
+    model = BlogArticle
 
 
-def detail(request, blog_id):
-
-    blog_target = BlogArticle.objects.get(pk=blog_id)
-    return render(request, 'blog/post.html', {"blog_target": blog_target})
+class PostCreateView(CreateView):
+    model = BlogArticle
+    fields = ['title', 'description', 'image']
+    

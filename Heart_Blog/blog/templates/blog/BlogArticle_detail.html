@@ -6,15 +6,15 @@
     <div class="blog-show">
         <div class="blog-detail">
 
-            <h1>{{ blog_target.title }}</h1>
-            <img src="{{ blog_target.image.url }}" alt="">
+            <h1>{{ object.title }}</h1>
+            <img src="{{ object.image.url }}" alt="">
 
             <div class="date">
-               <strong>Posted:</strong> {{ blog_target.date_to }}
+               <strong>Posted:</strong> {{ object.date_to }}
             </div>
 
             <p>
-                {{ blog_target.description }}
+                {{ object.description }}
             </p>
 
         </div>
