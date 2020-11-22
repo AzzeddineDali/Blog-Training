@@ -1,0 +1,21 @@
+{% extends "blog/base.html" %}
+{% load static %}
+
+
+{% block content %}
+
+        <div class="blog-show">
+
+            <form method="post">
+
+                {% csrf_token %}
+
+                <p>Are you sure you want to delete "{{ object }}" ?</p>
+                <input type="submit" value="Confirm">
+                <button><a href="{% url 'home-page' %}">Cancel</a></button>
+
+            </form>
+
+        </div>
+
+{% endblock content %}

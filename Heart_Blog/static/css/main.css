@@ -120,7 +120,7 @@ body {
 }
 .content .blog-show .blog-detail h1 {
     text-transform:capitalize;
-    font-size: 25px;
+    font-size: 30px;
     font-family: monospace;
 }
 .content .blog-show .blog-detail .date {
@@ -141,6 +141,7 @@ body {
 .content .blog-show .blog-detail img {
     width: 500px;
     height: 400px;
+    margin: 15px 0 10px 0;
 }
 .content .blog-show .login-logout {
 	text-align: center;
