@@ -4,20 +4,20 @@
 
 {% block content %}
 
-        <div class="blog-show">
-            <h1> Here you can Update a post ^^</h1>
-        	<div class="blog-create">
+<div class="blog-show">
+    <h1> Here you can Update a post ^^</h1>
+    <div class="blog-create">
 
-                <form method="post">
+        <form method="post">
 
-                    {% csrf_token %}
-                    {{ form.as_p }}
-                    <button type="submit">Update Post</button>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Update Post</button>
 
-                </form>
+        </form>
 
 
-        </div>
-        </div>
+    </div>
+</div>
 
 {% endblock content %}

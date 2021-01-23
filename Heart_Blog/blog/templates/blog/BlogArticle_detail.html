@@ -3,31 +3,32 @@
 
 {% block content %}
 
-    <div class="blog-show">
-        <div class="blog-detail">
+<div class="blog-show">
+    <div class="blog-detail">
 
-            <h1>{{ object.title }}</h1>
+        <h1>{{ object.title }}</h1>
 
-            <img src="{{ object.image.url }}" alt="">
+        <img src="{{ object.image.url }}" alt="">
 
-            <div class="date">
-               <strong>Posted:</strong> {{ object.date_to |date:"SHORT_DATE_FORMAT" }} | {{ object.date_to |date:"F jS, Y" }}
-            </div>
-
-            <p>
-                {{ object.description }}
-            </p>
-
-            <button>
-               <a href="{% url 'post-delete' pk=object.pk %}">Delete Post</a>
-           </button>
-
-            <button>
-               <a href="{% url 'post-update' pk=object.pk %}">Update Post</a>
-           </button>
-
-
+        <div class="date">
+            <strong>Posted:</strong> {{ object.date_to |date:"SHORT_DATE_FORMAT" }} | {{ object.date_to |date:"F jS, Y"
+            }}
         </div>
+
+        <p>
+            {{ object.description }}
+        </p>
+
+        <button>
+            <a href="{% url 'post-delete' pk=object.pk %}">Delete Post</a>
+        </button>
+
+        <button>
+            <a href="{% url 'post-update' pk=object.pk %}">Update Post</a>
+        </button>
+
+
     </div>
+</div>
 
 {% endblock content %}

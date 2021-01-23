@@ -1,4 +1,8 @@
 /* Start Main Rules */
+
+*{
+    box-sizing: border-box;
+}
 body {
     margin: 0;
 
@@ -17,32 +21,32 @@ body {
 
 .slider-navbar { background-color: #3a93b2; }
 
-.slider-navbar .navbar h3 {
+.slider-navbar nav h3 {
     float: left;
     font-size: 38px;
     color: #666;
     margin-top: 25px;
 }
-.slider-navbar .navbar h3 span {
+.slider-navbar nav h3 span {
     color: rgba(1, 217, 62, 0.95);
 }
 
-.slider-navbar .navbar ul {     list-style-type: none; float: right;   }
+.slider-navbar nav ul {     list-style-type: none; float: right;   }
 
-.slider-navbar .navbar ul li {
+.slider-navbar nav ul li {
     display: inline-block;
     padding: 0 15px;
     font-size: 22px;
     margin-top: 25px;
 }
-.slider-navbar .navbar ul li a {
+.slider-navbar nav ul li a {
     text-decoration: none;
     color: #c6edf4;
     font-weight: 777;
     font-family: monospace;
 }
-.slider-navbar .navbar ul li.active a,
-.slider-navbar .navbar ul li a:hover{   color: #555;  }
+.slider-navbar nav ul li.active a,
+.slider-navbar nav ul li a:hover{   color: #555;  }
 
 /* End Slider-navbar */
 
@@ -52,22 +56,28 @@ body {
     overflow: hidden;
     min-height: 500px;
 }
-.content .best-blog {
+.content aside {
     width: 20%;
     float: left;
     background-color: #3a93b2;
     margin-right: 3%;
-    height: 500px;
-    padding-left: 3px;
-    padding-top: 40px;
+    border: 2px solid #CCC;
+    min-height: 300px;
 }
 
-.content .best-blog h2 {
+.content aside header {
     color: #FFF;
     text-transform: uppercase;
     font: bold 20px Tahoma;
+    background-color: #3a93b2;
+    border: 1px solid #CCC;
+    padding:5px;
 }
-.content .best-blog a {
+.content aside .blog-link
+{
+    padding: 10px;
+}
+.content aside a {
     display: block;
     padding: 5px 0;
     color: #c6edf4;
@@ -112,6 +122,18 @@ body {
     width: 85%;
     height: 250px;
     margin: 50px 0 10px 0;
+    padding: 3px;
+    border: 1px solid #CCC;
+    transition: all .5s ease-in-out;
+    
+}
+.content .blog-show  img:hover {
+    box-shadow: 
+        3px 3px 10px rgb(21, 223, 230),
+        -3px -3px 10px rgb(21, 223, 230);
+        transform: scale(1.2);
+
+    
 }
 
 .content .blog-show .blog-detail {
@@ -142,6 +164,8 @@ body {
     width: 500px;
     height: 400px;
     margin: 15px 0 10px 0;
+    transform: none;
+    box-shadow: none;
 }
 .content .blog-show .login-logout {
 	text-align: center;
@@ -264,11 +288,16 @@ body {
     font-family: monospace;
 }
 
-.contact-me .label-input input[type="text"] {
+.contact-me .label-input input[type="text"] ,
+.contact-me .label-input input[type="email"]
+{
     background: none;
     border: 1px solid #ccc;
     width: 550px;
     padding: 12px 0;
+    text-indent: 10px;
+    color:#444;
+    font-size: 18px;
 }
 .contact-me textarea {
     margin-top: 10px;
@@ -277,6 +306,9 @@ body {
     width: 1116px;
     background: none;
     border: 1px solid #ccc;
+    text-indent: 10px;
+    color:#444;
+    font-size: 18px;
 }
 
 .contact-me input[type='submit'] {
@@ -294,13 +326,13 @@ body {
 /* end contact me */
 /* start footer */
 
-.footer {
+footer {
     background-color: #ccc;
     text-align: center;
     padding: 20px 0;
 }
 
-.footer span {  font-size: 18px;    }
+footer span {  font-size: 18px;    }
 
 /* end footer */
 

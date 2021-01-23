@@ -1,17 +1,19 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Travel Word</title>
     <link rel="stylesheet" href="{% static '/CSS/main.css' %} ">
 </head>
+
 <body>
-    <!-- Start Slider-navbar -->
-    <div class="slider-navbar">
+    <!-- Start Header -->
+    <header class="slider-navbar">
         <div class="container">
             <!-- Start NavBar -->
-            <div class="navbar">
+            <nav>
                 <h3><span>Travel</span> Blog</h3>
                 <ul>
                     <li class="active"><a href="{% url 'home-page' %}">Home</a></li>
@@ -21,72 +23,75 @@
 
                     {% if user.is_authenticated %}
 
-                        <li><a href="{% url 'logout' %}">Logout</a></li>
-                        <li><a href="{% url 'profile' %}">Profile</a></li>
+                    <li><a href="{% url 'logout' %}">Logout</a></li>
+                    <li><a href="{% url 'profile' %}">Profile</a></li>
 
-                     {% else %}
+                    {% else %}
 
-                        <li><a href="{% url 'login' %}">Login</a></li>
-                        <li><a href="{% url 'register' %}">Register</a></li>
+                    <li><a href="{% url 'login' %}">Login</a></li>
+                    <li><a href="{% url 'register' %}">Register</a></li>
 
-                     {% endif %}
+                    {% endif %}
 
                     <li><a href="#">About Us</a></li>
                 </ul>
-            </div>
+            </nav>
 
             <!-- End NavBar -->
+
+            <!-- Start Clear Float -->
+
             <div class="clear-float"></div>
-           
-            <!-- Start Slider -->
-              
-            <!-- End Slider -->
+
+            <!-- End Clear Float -->
 
         </div>
-    </div>
-    <!-- End Slider-navbar -->
+    </header>
+    <!-- End Header -->
     <!-- start content -->
 
-      <div class="content">
+    <div class="content">
         <div class="container">
-           <!-- Start show title best 5 blog -->
+            <!-- Start show title best 5 blog -->
 
-            <div class="best-blog">
-                <h2>Best Blog Watched !</h2>
-                <a href="#">Blog Article 1</a>
-                <a href="#">Blog Article 2</a>
-                <a href="#">Blog Article 3</a>
-            </div>
+            <aside class="best-blog">
+                <header class="best-blog-header">Best Blog Watched</header>
+                <div class="blog-link">
+                    <a href="#">Blog Article 1</a>
+                    <a href="#">Blog Article 2</a>
+                    <a href="#">Blog Article 3</a>
+                </div>
+            </aside>
 
-            <!-- end show title best 5 blog -->
+            <!-- End show title best 5 blog -->
 
-    {% block content %}
+            {% block content %}
 
-        <!-- Place of our content block -->
+            <!-- Place of our content block -->
 
-    {% endblock content %}
+            {% endblock content %}
 
-         </div>
+        </div>
     </div>
     <!-- end content -->
     <!-- Start contact Me -->
 
-    <form class="contact-me">
+    <form class="contact-me" method="POST">
         <div class="container">
             <h2>Get in touch</h2>
             <div class="label-input">
-                 <label>Name</label>
-                <input type="text">
+                <label>Name</label>
+                <input type="text" name="user-name" required placeholder="Your Name">
             </div>
 
             <div class="label-input">
                 <label>Email</label>
-                <input type="text">
+                <input type="email" required name="email" placeholder=" Your Email">
             </div>
 
             <div class="label-input">
                 <label>Message</label>
-                <textarea></textarea>
+                <textarea placeholder="Tape You Message Please"></textarea>
 
                 <input type="submit" value="Send Message">
             </div>
@@ -95,15 +100,13 @@
     <!-- end contact Me -->
     <!-- start footer -->
 
-    <div class="footer">
+    <footer>
         <div class="container">
-            <span>Copyright  &copy; Made with &hearts; By Dali</span>
+            <span>Copyright &copy; Made with &hearts; By Dali</span>
         </div>
-    </div>
+    </footer>
 
     <!-- end footer -->
-
-
-
 </body>
+
 </html>

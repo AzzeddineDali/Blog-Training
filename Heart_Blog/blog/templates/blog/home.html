@@ -4,26 +4,26 @@
 
 {% block content %}
 
-    <!-- start Blog show article -->
+<!-- start Blog show article -->
 
-        <div class="blog-show">
-            <h1>Latest blog posts </h1>
+<div class="blog-show">
+    <h1>Latest blog posts </h1>
 
-            {% for blog in blogs %}
-               <div class="blog-image-title">
+    {% for blog in blogs %}
+    <div class="blog-image-title">
 
-                   <a href="{% url 'post-detail' pk=blog.pk %}">
-                       <img src="{{ blog.image.url }}" alt="">
-                   </a>
+        <a href="{% url 'post-detail' pk=blog.pk %}">
+            <img src="{{ blog.image.url }}" alt="">
+        </a>
 
-                   <a href="{% url 'post-detail' pk=blog.pk %}">
-                       {{ blog.title }}
-                   </a>
+        <a href="{% url 'post-detail' pk=blog.pk %}">
+            {{ blog.title }}
+        </a>
 
-               </div>
-            {% endfor %}
+    </div>
+    {% endfor %}
 
-        </div>
-    <!-- End Blog show article -->
+</div>
+<!-- End Blog show article -->
 
 {% endblock content %}

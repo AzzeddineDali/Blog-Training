@@ -4,18 +4,18 @@
 
 {% block content %}
 
-        <div class="blog-show">
+<div class="blog-show">
 
-            <form method="post">
+    <form method="post">
 
-                {% csrf_token %}
+        {% csrf_token %}
 
-                <p>Are you sure you want to delete "{{ object }}" ?</p>
-                <input type="submit" value="Confirm">
-                <button><a href="{% url 'home-page' %}">Cancel</a></button>
+        <p>Are you sure you want to delete "{{ object }}" ?</p>
+        <input type="submit" value="Confirm">
+        <button><a href="{% url 'home-page' %}">Cancel</a></button>
 
-            </form>
+    </form>
 
-        </div>
+</div>
 
 {% endblock content %}

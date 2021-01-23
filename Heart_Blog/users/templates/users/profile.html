@@ -3,22 +3,21 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-    <div class="blog-show">
+<div class="blog-show">
 
-	  <div class="profile">
+    <div class="profile">
 
         <fieldset>
-                <legend>Profile </legend>
-            
-                <h2>Name: {{ user.username }} </h2> 
-                <h3>Email: {{ user.email }}  </h3>
+            <legend>Profile </legend>
+
+            <h2>Name: {{ user.username }} </h2>
+            <h3>Email: {{ user.email }} </h3>
 
             <img class="profile-image" src="{{ user.profile.image.url }}" alt="">
 
         </fieldset>
 
-
-        </div>
     </div>
+</div>
 
 {% endblock content %}

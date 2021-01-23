@@ -4,18 +4,19 @@
 
 {% block content %}
 
-    <div class="blog-show">
+<div class="blog-show">
 	<h1> Here you can create a post ^^</h1>
-        	<div class="blog-create">
+	<div class="blog-create">
 
-			<form method="post" enctype="multipart/form-data">
-				{% csrf_token %}
+		<form method="post" enctype="multipart/form-data">
+			{% csrf_token %}
 
-				{{ form }}
-				<button type="submit">Create post</button>
-			</form>
-	        </div>
-    </div>
+			{{ form }}
+
+			<button type="submit">Create post</button>
+		</form>
+	</div>
+</div>
 
 
 
